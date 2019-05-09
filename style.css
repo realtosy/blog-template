@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+main {
+  width: 360px;
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  box-shadow: 2px 0 8px lightgray,
+              -2px 0 8px lightgray,
+              0 2px 8px lightgray,
+              0 -2px 8px lightgray;
+}
+
+article {
+  flex: 10;
+  background: url('orig.jpg') center 0 / auto 100% no-repeat,
+              linear-gradient(to bottom, white, lightgray, gray);
+  background-blend-mode: multiply;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10%;
+  padding-right: 30%;
+  text-transform: uppercase;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+}
+
+article section:first-child {
+  flex: 2;
+}
+
+article section:last-child {
+  flex: 3;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+article a {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 1rem;
+  border: none;
+  background-color: white;
+  color: gray;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+article a:hover {
+  color: black;
+  transition: 0.1s;
+  outline: 3px solid white;
+}
+
+footer {
+  flex: 1;
+  display: flex;
+}
+
+footer a {
+  background-color: white;
+  border: none;
+}
+
+footer a:first-child {
+  flex: 1;
+  color: gray;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.01rem;
+  text-align: center;
+  text-decoration: none;
+  line-height: 3.443;
+  font-size: 1.5rem;
+}
+
+footer a:first-child:hover {
+  color: black;
+  transition: 0.1s;
+}
+
+
+ul {
+  flex: 1;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+li {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
+li:hover {
+  background-color: gray;
+}
+
+li:first-child {
+  background-color: gray;
+}
+
+footer a:last-child {
+  flex: 1;
+  background: url('button.png') center 0 / auto 100% no-repeat;
+}

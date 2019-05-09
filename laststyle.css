@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+main {
+  width: 360px;
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  box-shadow: 2px 0 8px lightgray,
+              -2px 0 8px lightgray,
+              0 2px 8px lightgray,
+              0 -2px 8px lightgray;
+}
+
+header {
+  flex: 1;
+  text-align: center;
+  background-color: white;
+  padding-top: 2rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  vertical-align: bottom;
+}
+
+header a {
+  float: right;
+  border: none;
+  background-color: white;
+  position: relative;
+  bottom: 1.5rem;
+  right: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
+
+  background: url('close.png') center center / 15px 15px;
+}
+
+article {
+  flex: 10;
+  color: gray;
+  font-size: 1.5rem;
+  padding: 10%;
+  padding-top: 0;
+  line-height: 1.5;
+}
+
+.comment {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.avatar {
+  width: 5rem;
+  background: linear-gradient(cyan, gray 80%, lightgray);
+  border-radius: 50%;
+  height: 5rem;
+  margin-right: 2rem;
+}
+
+.comment:nth-child(2) .avatar {
+  background: linear-gradient(magenta, gray 80%, lightgray);
+}
+
+.comment:nth-child(3) .avatar {
+  background: linear-gradient(yellow, gray 80%, lightgray);
+}
+
+.comment:nth-child(4) .avatar {
+  background: linear-gradient(black, gray 80%, lightgray);
+}
+
+.comment-text {
+  flex: 4;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 1rem;
+  color: lightgray;
+}
+
+li:first-child {
+  color: black;
+  font-weight: bold;
+}
+
+li:nth-child(2) {
+  background-color: lightgray;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
